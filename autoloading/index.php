@@ -3,6 +3,13 @@
 use Human\Human as Human;
 use Human\Leg;
 
+spl_autoload_register(
+    function ($className){
+		echo ($fileName = __DIR__.'/'.$className.'.php'). "<br/>";
+		require_once $fileName;
+	}
+);
+
 new Leg();
 $logger1 = Logger::getInstance();
 
