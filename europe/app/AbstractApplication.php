@@ -66,7 +66,7 @@ abstract class AbstractApplication
         $whoops = new Run();
         $whoops->pushHandler(new PrettyPageHandler());
         $whoops->register();
-        
+
         try {
             $this->logger->debug('Launch the application run');
             $result = $this->run();
@@ -127,4 +127,16 @@ abstract class AbstractApplication
      */
     protected abstract function run() : ?string;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -13,4 +13,5 @@ $application = new Application(
 );
 
 // We start here the application process, and send the response to the client
-$application->execute()->send();
+$response = $application->execute();
+$response->send();
