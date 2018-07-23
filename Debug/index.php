@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body class="container">
-		<?php include __DIR__.'/templates/header.php'; ?>
+		<?php include __DIR__.'/templates/header.php'; //error?>
     	
     	<section role="main">
     		<?php include __DIR__.'/templates/navbar.php'; ?>
