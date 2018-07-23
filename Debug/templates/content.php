@@ -36,7 +36,13 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
 //if finished replace this by: array_map and array_filter
 //only one opening curly brace is allowed
 if (isset($_GET['search']) && !empty($_GET['search']))
-	$users = array_filter(array_map(function($a){if(strstr($a['username'], $_GET['search']))return $a;}, $users));
+	$users = array_filter(
+		array_map(
+			function($a)
+				{
+					if(strstr($a['username'], $_GET['search']))
+						return $a;
+				}, $users));
 
 
 ?>
